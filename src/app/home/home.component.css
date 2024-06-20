@@ -1,0 +1,48 @@
+
+
+.img{
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+}
+.home-card {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    text-shadow: 0px 5px 10px  #000000;
+}
+h1{
+    font-size: 1.87em;
+    margin-bottom: 0px;
+}
+p{
+    font-family: "Wellfleet", monospace;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 1.35rem;
+}
+
+.img-container{
+    width: 98vw;
+    /* height: 300px; */
+}
+img{
+    object-fit: fill;
+    width: inherit;
+    /* height: 300px; */
+}
+@media (max-width:838px){
+    p{
+        position: absolute;
+        font-size: large;
+        /* top: 200px;
+        left: 490px;
+        width: 250px;
+        height: fit-content;
+        border: 1px solid rebeccapurple; */
+    }
+}

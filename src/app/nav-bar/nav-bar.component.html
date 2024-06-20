@@ -1,0 +1,23 @@
+<div class="navbar">
+  <ul class="nav-links">
+    <li class="welcome">
+      <a href="/" class="welcome"><mat-icon>Home</mat-icon></a>
+    </li>
+
+    <li> 
+      <button id="nav-btn" (click)="tooblebtn()"  mat-button>
+            <mat-icon>{{ isOpen? "menu": "close" }}</mat-icon>
+      </button>
+    </li>
+    
+    <li [class.is-open]="isOpen" class="links" [ngClass]="{'is-open': !isOpen}">
+      <a  (click)="getAbout()" [routerLink]="['/']" fragment="about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        ariaCurrentWhenActive="page">About</a>
+      <a  (click)="getProjects()" [routerLink]="['/']" fragment="Projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        ariaCurrentWhenActive="page">Projects</a>
+      <a  (click)="getContact()" [routerLink]="['/']" fragment="Contacts" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        ariaCurrentWhenActive="page">Contact</a>
+    </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
